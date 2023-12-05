@@ -10,7 +10,13 @@ export const metadata: Metadata = {
 	description: "A Next.js gallery app using Cloudinary and Clerk"
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+	children,
+	modal
+}: {
+	children: React.ReactNode;
+	modal: React.ReactNode;
+}) {
 	return (
 		<ClerkProvider>
 			<html lang="en">
@@ -21,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					)}
 				>
 					{children}
+					{modal}
 					<Toaster
 						position="top-right"
 						reverseOrder={false}

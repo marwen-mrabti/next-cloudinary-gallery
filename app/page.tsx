@@ -3,7 +3,7 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Gallery from "@/components/gallery/gallery";
 import UploadBtn from "@/components/upload-btn";
 
-export default async function Home() {
+export default async function HomePage() {
 	return (
 		<main className="flex h-fit min-h-screen flex-col items-center justify-start gap-10 px-10 ">
 			<div className="!sticky top-0 z-50 flex w-full  items-center justify-end gap-10 py-3 backdrop-blur-sm">
